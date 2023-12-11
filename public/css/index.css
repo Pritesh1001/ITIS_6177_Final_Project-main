@@ -1,38 +1,45 @@
-
-.wrapper
-{
-    height: 100vh;
+/* Improved readability with consistent formatting */
+.wrapper {
+    height: 100vh; /* Maintaining full viewport height */
     display: flex;
     flex-direction: column;
+    background-color: #f8f9fa; /* Added a light background color */
 }
 
-body
-{
-    height: 100%;
+body {
     margin: 0;
     padding: 0;
-    color: white;
-
+    color: #343a40; /* Changed text color for better contrast */
+    height: 100%;
+    font-family: 'Arial', sans-serif; /* Updated font for a modern look */
 }
+
+/* Enhanced navbar appearance */
 .navbar.bg-primary {
-    background-color: rgb(41, 120, 184);
-  }
-
-.main_content
-{
-    width: 80%;
-    margin: 5% auto;
-   flex: 1;
-
+    background-color: #007bff; /* Brighter shade of blue */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
 }
-footer{
-    background-color:rgb(41, 120, 184)
+
+.main_content {
+    width: 90%; /* Slightly increased width */
+    margin: 2% auto; /* Reduced margin for tighter layout */
+    flex: 1;
+    background-color: #fff; /* Added a white background for the main content */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    padding: 20px; /* Added padding for spacing inside the container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Consistent shadow as navbar */
 }
-.footer_nav
-{
-        width: 40%;
-        margin: 0 auto;
-        padding-top: 0.2%;
-        padding-bottom: 0.1%;
-        padding-left: 14%;
+
+footer {
+    background-color: #007bff; /* Matching the navbar color */
+    color: #fff; /* Ensured footer text is white for readability */
+    padding: 10px 0; /* Adjusted padding for better spacing */
+}
+
+.footer_nav {
+    width: 60%; /* Increased width for better alignment of elements */
+    margin: 0 auto;
+    padding-top: 0.5%; /* Adjusted padding for better visual balance */
+    padding-bottom: 0.3%;
+    padding-left: 10%; /* Reduced left padding for alignment */
 }
