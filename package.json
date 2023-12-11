@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tpatil6uncc/ITIS_6177_Final_Project.git"
+    "url": "git+https://github.com/Pritesh1001/ITIS_6177_Final_Project-main.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tpatil6uncc/ITIS_6177_Final_Project/issues"
+    "url": "https://github.com/Pritesh1001/ITIS_6177_Final_Project-main/issues"
   },
-  "homepage": "https://github.com/tpatil6uncc/ITIS_6177_Final_Project#readme",
+  "homepage": "https://github.com/Pritesh1001/ITIS_6177_Final_Project-main/blob/main/README.md",
   "dependencies": {
     "axios": "^1.4.0",
     "bootstrap": "^5.2.3",
