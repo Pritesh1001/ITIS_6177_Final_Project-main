@@ -3,24 +3,30 @@
 <main class="main_content">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-6">
-        <form method="POST" action="/" class="mt-4 <% if(opID) { %>d-none<% } %>">
+      <div class="col-md-8 col-lg-6"> <!-- Adjusted for better responsive behavior -->
+        <form method="POST" action="/" class="mt-4 border p-4 rounded shadow <% if(opID) { %>d-none<% } %>"> <!-- Added styling for the form -->
+          <h2 class="text-center mb-4">Image URL Submission</h2> <!-- Added heading for better user context -->
           <div class="form-group">
             <label for="image">Enter Image URL:</label>
             <div class="input-group">
-              <input type="text" class="form-control" name="image" id="image" required>
-              <button type="submit" class="btn btn-dark">Submit</button>
+              <input type="text" class="form-control" name="image" id="image" placeholder="Enter URL here" required>
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-primary">Submit</button> <!-- Changed button color for a fresh look -->
+              </div>
             </div>
           </div>
         </form>
 
         <% if(opID) { %>
-          <div class="alert alert-success mt-4" role="alert">
-            Image uploaded successfully!
+          <div class="alert alert-info mt-4 text-center" role="alert"> <!-- Changed the alert style for better visibility -->
+            Image uploaded successfully! <br>
+            Operation ID: <strong><%= opID %></strong> <!-- Displaying the operation ID -->
           </div>
-          <form method="GET" action="/<%=opID%>" class="mt-4">
-            <button type="submit" class="btn btn-dark">Extract Text</button>
-          </form>
+          <div class="text-center mt-4">
+            <form method="GET" action="/<%=opID%>">
+              <button type="submit" class="btn btn-success">Extract Text</button> <!-- Changed button style for distinction -->
+            </form>
+          </div>
         <% } %>
       </div>
     </div>
